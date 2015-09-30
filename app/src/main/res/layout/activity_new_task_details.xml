@@ -45,7 +45,9 @@
         android:layout_marginTop="67dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:minLines="7" />
+        android:minLines="7"
+        android:hint="enter details here"
+        android:gravity="left" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -57,5 +59,25 @@
         android:layout_alignLeft="@+id/taskDetails"
         android:layout_alignStart="@+id/taskDetails"
         android:layout_marginTop="32dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/btnSaveTask"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/btnCancel"
+        android:layout_alignBottom="@+id/btnSaveTask"
+        android:layout_toRightOf="@+id/btnSaveTask"
+        android:layout_toEndOf="@+id/btnSaveTask"
+        android:onClick="backToTaskList"
+        />
 
 </RelativeLayout>
